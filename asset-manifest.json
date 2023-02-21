@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/air-holiday/static/css/main.6fc082f7.css",
+    "main.js": "/air-holiday/static/js/main.b68acf9a.js",
+    "static/media/main-background.png": "/air-holiday/static/media/main-background.dc692a16289b852fe333.png",
+    "index.html": "/air-holiday/index.html",
+    "main.6fc082f7.css.map": "/air-holiday/static/css/main.6fc082f7.css.map",
+    "main.b68acf9a.js.map": "/air-holiday/static/js/main.b68acf9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc082f7.css",
+    "static/js/main.b68acf9a.js"
+  ]
+}
