@@ -1,0 +1,49 @@
+.main {
+  &-wrapper {
+    padding-top: 100px;
+    height: 100vh;
+    background: url("../img/main-background.png") no-repeat center;
+    background-size: cover;
+
+    .left-flags {
+      top: 100px;
+      left: 0;
+    }
+
+    .right-flags {
+      top: 100px;
+      right: 0;
+    }
+  }
+
+  &-text {
+    .hello {
+      font-size: 27px;
+      letter-spacing: 4px;
+      color: #FFFDFD;
+    }
+
+    .name {
+      font-size: 43px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      color: #FAE0C9;
+    }
+
+    .happy {
+      font-size: 74px;
+      color: #DFF4F7;
+    }
+
+    .wishes {
+      font-size: 36px;
+      color: #F79748;
+    }
+
+    .desc {
+      font-size: 24px;
+      text-align: center;
+      color: #FFFDFD;
+    }
+  }
+}

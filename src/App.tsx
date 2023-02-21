@@ -1,9 +1,15 @@
 import React from 'react';
+import './App.scss';
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 const App = () => {
   return (
-      <div>
-        Hello World!
+      <div id="page">
+          <div className="page-wrapper">
+              <Navbar/>
+              <Main/>
+          </div>
       </div>
   );
 };

@@ -1,0 +1,24 @@
+.navbar {
+  padding: 0 64px 0 32px;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: linear-gradient(177.65deg, #6438ce -2.19%, rgb(37, 1, 131) 110.15%);
+  z-index: 100;
+
+  .logo {
+    &-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+
+  .navigation {
+    &-link {
+      &:hover {
+        background: darken($purple, 6%);
+      }
+    }
+  }
+}
