@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
+import Congratulations from "./components/Congratulations";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
           <div className="page-wrapper">
               <Navbar/>
               <Main/>
+              <Congratulations/>
           </div>
       </div>
   );

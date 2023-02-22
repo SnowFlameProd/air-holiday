@@ -1,4 +1,9 @@
 import React from 'react';
+import leftFlags from '../img/left-flags.svg';
+import rightFlags from '../img/right-flags.svg';
+import leftHat from '../img/left-hat.svg';
+import rightHat from '../img/right-hat.svg';
+import cake from '../img/cake.svg';
 
 const Main = () => {
     return (
@@ -14,9 +19,15 @@ const Main = () => {
                     </div>
                 </div>
 
-                <img className="main-bg-image left-flags position-absolute" src="../img/left-flags.svg" alt=""/>
+                <img className="main-bg-image left-flags position-absolute" src={leftFlags} alt="left flags"/>
 
-                <img className="main-bg-image right-flags position-absolute" src="../img/left-flags.svg" alt=""/>
+                <img className="main-bg-image right-flags position-absolute" src={rightFlags} alt="right flags"/>
+
+                <img className="main-bg-image left-hat position-absolute" src={leftHat} alt="left hat"/>
+
+                <img className="main-bg-image right-hat position-absolute" src={rightHat} alt="right hat"/>
+
+                <img className="main-bg-image cake position-absolute" src={cake} alt="cake"/>
             </div>
         </>
     );

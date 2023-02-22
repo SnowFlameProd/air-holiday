@@ -28,33 +28,37 @@ $grays: map-merge(
                 $grays
 );
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #5321CA !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #50C878 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue:            #6495ED !default;
+$light-blue:      #68BDEE !default;
+$bright-blue:     #0096FF !default;
+$indigo:          #6610f2 !default;
+$purple:          #5321CA !default;
+$pink:            #e83e8c !default;
+$red:             #dc3545 !default;
+$orange:          #fd7e14 !default;
+$yellow:          #ffc107 !default;
+$green:           #50C878 !default;
+$teal:            #20c997 !default;
+$cyan:            #17a2b8 !default;
 
 $colors: () !default;
 $colors: map-merge(
                 (
-                        "blue":       $blue,
-                        "indigo":     $indigo,
-                        "purple":     $purple,
-                        "pink":       $pink,
-                        "red":        $red,
-                        "orange":     $orange,
-                        "yellow":     $yellow,
-                        "green":      $green,
-                        "teal":       $teal,
-                        "cyan":       $cyan,
-                        "white":      $white,
-                        "gray":       $gray-600,
-                        "gray-dark":  $gray-800
+                        "blue":               $blue,
+                        "light-blue":         $light-blue,
+                        "bright-blue":        $bright-blue,
+                        "indigo":             $indigo,
+                        "purple":             $purple,
+                        "pink":               $pink,
+                        "red":                $red,
+                        "orange":             $orange,
+                        "yellow":             $yellow,
+                        "green":              $green,
+                        "teal":               $teal,
+                        "cyan":               $cyan,
+                        "white":              $white,
+                        "gray":               $gray-600,
+                        "gray-dark":          $gray-800
                 ),
                 $colors
 );

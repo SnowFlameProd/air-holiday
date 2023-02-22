@@ -3,7 +3,7 @@
   width: 100%;
   height: 100px;
   position: fixed;
-  background: linear-gradient(177.65deg, #6438ce -2.19%, rgb(37, 1, 131) 110.15%);
+  background: linear-gradient(177.65deg, $blue -2.19%, $bright-blue 110.15%);
   z-index: 100;
 
   .logo {
@@ -16,8 +16,10 @@
 
   .navigation {
     &-link {
+      transition: all .2s linear;
+
       &:hover {
-        background: darken($purple, 6%);
+        background: darken($bright-blue, 5%);
       }
     }
   }
