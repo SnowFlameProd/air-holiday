@@ -3,6 +3,7 @@ import './App.scss';
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Congratulations from "./components/Congratulations";
+import Game from "./components/Game";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
               <Navbar/>
               <Main/>
               <Congratulations/>
+              <Game/>
           </div>
       </div>
   );

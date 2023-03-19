@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   background: linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
 }
 
@@ -11,4 +10,10 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.custom-card {
+  padding: 20px 32px;
+  background: $white;
+  border-radius: 20px;
 }

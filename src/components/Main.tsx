@@ -8,7 +8,7 @@ import cake from '../img/cake.svg';
 const Main = () => {
     return (
         <>
-            <div className="main-wrapper position-relative">
+            <div className="main-wrapper position-relative" id="main">
                 <div className="container py-3">
                     <div className="main-text d-flex flex-column align-items-center justify-content-center pt-5">
                         <div className="hello mb-8">Привет</div>

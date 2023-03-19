@@ -92,15 +92,15 @@ $spacers: () !default;
 $spacers: map-merge(
                 (
                         0: 0,
-                        1: ($spacer * .25),
-                        2: ($spacer * .5),
-                        3: $spacer,
-                        4: ($spacer * 1.5),
-                        5: ($spacer * 3),
-                        6: ($spacer * 4),
-                        7: ($spacer * 6),
-                        8: ($spacer * 2.5),
-                        9: ($spacer * .75)
+                        1: ($spacer * .25),   // 4px
+                        2: ($spacer * .5),    // 8px
+                        3: $spacer,           // 16px
+                        4: ($spacer * 1.5),   // 24px
+                        5: ($spacer * 3),     // 48px
+                        6: ($spacer * 4),     // 72px
+                        7: ($spacer * 6),     // 96px
+                        8: ($spacer * 2.5),   // 40px
+                        9: ($spacer * .75)    // 12px
                 ),
                 $spacers
 );
