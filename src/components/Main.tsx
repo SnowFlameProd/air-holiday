@@ -9,7 +9,7 @@ const Main = () => {
     return (
         <>
             <div className="main-wrapper position-relative" id="main">
-                <div className="container py-3">
+                <div className="container d-flex align-items-center">
                     <div className="main-text d-flex flex-column align-items-center justify-content-center pt-5">
                         <div className="hello mb-8">Привет</div>
                         <div className="name mb-8">Хена</div>
