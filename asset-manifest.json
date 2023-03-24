@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/air-holiday/static/css/main.6fc082f7.css",
-    "main.js": "/air-holiday/static/js/main.b68acf9a.js",
+    "main.css": "/air-holiday/static/css/main.addb04d5.css",
+    "main.js": "/air-holiday/static/js/main.d28dee7d.js",
     "static/media/main-background.png": "/air-holiday/static/media/main-background.dc692a16289b852fe333.png",
+    "static/media/cloud.gif": "/air-holiday/static/media/cloud.6c012e1c3b037b7decf5.gif",
+    "static/media/buster.png": "/air-holiday/static/media/buster.1930fe2eaa5e635f1bae.png",
+    "static/media/cake.svg": "/air-holiday/static/media/cake.6664a1f67b0d76727ca69061502be2db.svg",
+    "static/media/left-hat.svg": "/air-holiday/static/media/left-hat.9e3e4a195153ed2b9ce3f60cb92ec22b.svg",
+    "static/media/right-hat.svg": "/air-holiday/static/media/right-hat.11d3c54382085d8e9772737d14c7afc8.svg",
+    "static/media/left-flags.svg": "/air-holiday/static/media/left-flags.3f2fb132e87dcb9decbc449c8384c2b3.svg",
+    "static/media/right-flags.svg": "/air-holiday/static/media/right-flags.646bfb5cfb387a4120b2a2d860442921.svg",
     "index.html": "/air-holiday/index.html",
-    "main.6fc082f7.css.map": "/air-holiday/static/css/main.6fc082f7.css.map",
-    "main.b68acf9a.js.map": "/air-holiday/static/js/main.b68acf9a.js.map"
+    "main.addb04d5.css.map": "/air-holiday/static/css/main.addb04d5.css.map",
+    "main.d28dee7d.js.map": "/air-holiday/static/js/main.d28dee7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fc082f7.css",
-    "static/js/main.b68acf9a.js"
+    "static/css/main.addb04d5.css",
+    "static/js/main.d28dee7d.js"
   ]
 }
