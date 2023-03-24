@@ -1,21 +1,3 @@
 #game {
   height: 100vh;
-
-  .slick-arrow {
-    width: 30px;
-    height: 30px;
-
-    &::before {
-      color: $primary;
-      font-size: 30px;
-    }
-
-    &.slick-prev {
-      left: -35px;
-    }
-
-    &.slick-next {
-      right: -35px;
-    }
-  }
 }

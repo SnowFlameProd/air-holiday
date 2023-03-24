@@ -17,6 +17,9 @@ const Navbar = () => {
                     <a className="px-4 h-100 d-flex align-items-center justify-content-between navigation-link" href="#moments">
                         <div>Смешные моменты</div>
                     </a>
+                    <a className="px-4 h-100 d-flex align-items-center justify-content-between navigation-link" href="#charter">
+                        <div>Грамота</div>
+                    </a>
                 </div>
             </div>
         </nav>

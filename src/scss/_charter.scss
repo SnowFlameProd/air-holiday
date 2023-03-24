@@ -1,0 +1,33 @@
+#charter {
+  padding-bottom: 16px;
+}
+
+.charter {
+  &-img {
+    width: 580px;
+  }
+
+  &-container {
+    top: 310px;
+    color: $blue;
+  }
+
+  &-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &-name {
+    font-size: 28px;
+  }
+
+  &-text {
+    font-size: 20px;
+  }
+
+  &-print {
+    width: 100px;
+    right: 36%;
+    bottom: -70%;
+  }
+}

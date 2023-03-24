@@ -18,6 +18,30 @@ ul {
   border-radius: 20px;
 }
 
+.custom-wrapper {
+  padding: 20px;
+  background: #c8dcff;
+  border-radius: $border-radius;
+}
+
 .slick-slider {
-  width: 700px;
+  width: 644px;
+}
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    color: $primary;
+    font-size: 30px;
+  }
+
+  &.slick-prev {
+    left: -50px;
+  }
+
+  &.slick-next {
+    right: -50px;
+  }
 }

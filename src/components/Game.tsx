@@ -18,9 +18,10 @@ const Game = () => {
     const [status, setStatus] = React.useState('normal');
 
     const phrase = 'Хена Чан это Матвей Ильков';
+    const secondPhrase = 'Матвей Ильков это Хена Чан';
 
     const submit = (value: string) => {
-        if (value === phrase) {
+        if (value === phrase || value === secondPhrase) {
             setStatus('success');
         } else {
             setStatus('fail');
@@ -34,52 +35,54 @@ const Game = () => {
                     <div className="col-md-5">
                         <img className="w-100" src={buster} alt="Buster"/>
                     </div>
-                    <div className="col-md-7">
-                        {
-                            gameStarted && !gameFinished ?
-                                <div className="d-flex flex-column h-100 justify-content-center">
-                                    <Slider {...settings}>
-                                        {data.questions.map((question, index) => {
-                                            return(
-                                                <div>
-                                                    <h3 className="mb-3">Подсказка №{question.number}</h3>
-                                                    <div>{question.text}</div>
+                    <div className="col-md-7 d-flex align-items-center justify-content-center">
+                        <div className="custom-wrapper">
+                            {
+                                gameStarted && !gameFinished ?
+                                    <div className="d-flex flex-column h-100 justify-content-center">
+                                        <Slider {...settings}>
+                                            {data.questions.map((question, index) => {
+                                                return(
+                                                    <div key={index}>
+                                                        <h3 className="mb-5 text-center">Подсказка №{question.number}</h3>
+                                                        <div className="text-center">{question.text}</div>
 
-                                                    {
-                                                        index === 21 ?
-                                                            <div className="mt-3">
-                                                                <div className="mb-3">Если ты справилась со всеми подсказками и нашла все подарки, нажми кнопку ниже</div>
-                                                                <button className="btn btn-primary" onClick={() => {setGameFinished(true)}}>Закончить игру</button>
-                                                            </div> : ''
-                                                    }
-                                                </div>
-                                            );
-                                        })}
-                                    </Slider>
-                                </div> :
-                                !gameFinished ? <div className="align-items-center d-flex flex-column h-100 justify-content-center">
-                                    <div>
-                                        <p>Привет, Хена! Меня зовут Бастер, и сегодня я буду помогать тебе искать твои подарки!</p>
-                                        <p>У тебя дома спрятаны куча подарков, некоторые из них являются частью головоломки, решив которую ты получишь свой основной подарок! Желаю тебе удачи в твоих поисках!</p>
-                                    </div>
-                                    <button className="btn btn-primary" onClick={() => setGameStarted(true)}>Начать игру!</button>
-                                </div> : ''
-                        }
-                        {
-                            gameFinished && (status === 'normal' || status === 'fail') ?
-                                <div className="d-flex flex-column h-100 justify-content-center align-items-center">
-                                    <div className="mb-3">А теперь, когда ты завершила поиски, введи получившуюся фразу:</div>
-                                    <input className="form-control mb-3" type="text" onChange={(e) => setValueInput(e.target.value)} value={inputValue}/>
-                                    {status === 'fail' ? <div className="text-danger mb-3">Неправильно, думай еще!</div> : ''}
-                                    <button className="btn btn-primary" onClick={() => submit(inputValue)}>Отправить фразу</button>
-                                </div> :
-                                status === 'success' ?
-                                    <div className="d-flex flex-column h-100 justify-content-center align-items-center">
-                                        <div className="text-success">
-                                            Поздравляю! Ищи свой подарок на балконе :)
+                                                        {
+                                                            index === 21 ?
+                                                                <div className="mt-5 text-center">
+                                                                    <div className="mb-3">Если ты справилась со всеми подсказками и нашла все подарки, нажми кнопку ниже</div>
+                                                                    <button className="btn btn-primary" onClick={() => {setGameFinished(true)}}>Закончить игру</button>
+                                                                </div> : ''
+                                                        }
+                                                    </div>
+                                                );
+                                            })}
+                                        </Slider>
+                                    </div> :
+                                    !gameFinished ? <div className="align-items-center d-flex flex-column h-100 justify-content-center">
+                                        <div>
+                                            <p>Привет, Хена! Меня зовут Бастер, и сегодня я буду помогать тебе искать твои подарки!</p>
+                                            <p>У тебя дома спрятаны куча подарков, некоторые из них являются частью головоломки, решив которую ты получишь свой основной подарок! Желаю тебе удачи в твоих поисках!</p>
                                         </div>
+                                        <button className="btn btn-primary" onClick={() => setGameStarted(true)}>Начать игру!</button>
                                     </div> : ''
-                        }
+                            }
+                            {
+                                gameFinished && (status === 'normal' || status === 'fail') ?
+                                    <div className="d-flex flex-column h-100 justify-content-center align-items-center">
+                                        <div className="mb-3">А теперь, когда ты завершила поиски, введи получившуюся фразу:</div>
+                                        <input className="form-control mb-3" type="text" onChange={(e) => setValueInput(e.target.value)} value={inputValue}/>
+                                        {status === 'fail' ? <div className="text-danger mb-3">Неправильно, думай еще!</div> : ''}
+                                        <button className="btn btn-primary" onClick={() => submit(inputValue)}>Отправить фразу</button>
+                                    </div> :
+                                    status === 'success' ?
+                                        <div className="d-flex flex-column h-100 justify-content-center align-items-center">
+                                            <div className="text-success">
+                                                Поздравляю! Ищи свой подарок на балконе :)
+                                            </div>
+                                        </div> : ''
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

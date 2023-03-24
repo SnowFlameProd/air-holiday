@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Congratulations from "./components/Congratulations";
 import Game from "./components/Game";
 import Moments from "./components/Moments";
+import Charter from "./components/Charter";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
               <Congratulations/>
               <Game/>
               <Moments/>
+              <Charter/>
           </div>
       </div>
   );
